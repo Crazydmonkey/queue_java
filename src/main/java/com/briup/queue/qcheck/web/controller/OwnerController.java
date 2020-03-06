@@ -33,6 +33,7 @@ public class OwnerController {
     @GetMapping("findAll")
     @ApiOperation("查询个人人员信息")
     public Message findAll(){
+
         List<Owner> list = ownerService.findAll();
         return MessageUtil.success("success",list);
     }
